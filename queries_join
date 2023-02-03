@@ -55,6 +55,7 @@ ORDER BY `teachers`.`surname`,`teachers`.`name`;
 -- 7. BONUS: Selezionare per ogni studente quanti tentativi d’esame ha sostenuto per superare ciascuno dei suoi esami
 SELECT `students`.`surname`, `students`.`name`, 
 `courses`.`name` AS `course_name`,
+-- meglio usare il count specifico che con asterisco, sia per la leggibilità e anche per la velocità della query
 COUNT(`exam_student`.`vote`) AS `attempts`,
 MAX(`exam_student`.`vote`) AS `best_vote`
 FROM `students`
