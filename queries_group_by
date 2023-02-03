@@ -1,5 +1,3 @@
--- con le join avrei potuto rappresentarli meglio, ma ho scelto di usare solo lo stretto necessario in modo da dividere gli esercizi
-
 -- 1. Contare quanti iscritti ci sono stati ogni anno
 SELECT YEAR(`enrolment_date`) AS `year`, COUNT(`id`) AS `n_enr` 
 FROM `students` 
